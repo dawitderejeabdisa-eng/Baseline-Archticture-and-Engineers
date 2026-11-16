@@ -1,0 +1,258 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#fff;
+color:#333;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0f172a;
+color:white;
+}
+
+.logo span{
+font-size:13px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.active{
+color:#d4a017;
+}
+
+/* Hero */
+
+.hero{
+height:50vh;
+background:linear-gradient(rgba(0,0,0,.6),
+rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+/* Company */
+
+.company{
+padding:90px 10%;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.company-image,
+.company-content{
+flex:1;
+}
+
+.company-image img{
+width:100%;
+border-radius:12px;
+}
+
+.company-content h2{
+font-size:40px;
+color:#0f172a;
+margin-bottom:20px;
+}
+
+.company-content p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+/* Vision Mission */
+
+.vision-mission{
+background:#f8fafc;
+padding:90px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.box{
+background:white;
+padding:35px;
+border-radius:12px;
+text-align:center;
+}
+
+.box i{
+font-size:50px;
+color:#d4a017;
+margin-bottom:20px;
+}
+
+/* Values */
+
+.values{
+padding:90px 10%;
+text-align:center;
+}
+
+.values h2{
+margin-bottom:50px;
+font-size:40px;
+}
+
+.value-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.value-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.value-card i{
+font-size:45px;
+color:#d4a017;
+margin-bottom:15px;
+}
+
+/* Team */
+
+.team{
+background:#f8fafc;
+padding:90px 10%;
+text-align:center;
+}
+
+.team h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.team-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.team-card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.team-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+/* Stats */
+
+.stats{
+background:#0f172a;
+padding:70px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+text-align:center;
+color:white;
+}
+
+.stat h2{
+font-size:42px;
+color:#d4a017;
+}
+
+/* CTA */
+
+.cta{
+padding:90px 10%;
+text-align:center;
+}
+
+.cta h2{
+margin-bottom:20px;
+font-size:40px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#d4a017;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* Footer */
+
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.copyright{
+margin-top:15px;
+font-size:14px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.company{
+flex-direction:column;
+}
+}
